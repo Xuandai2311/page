@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #4fb68d;
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+  font-size: 15px;
+  width: 100%;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #999;
+  padding: 6px 30px;
+  box-sizing: border-box;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background: #253138;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.logo {
+  margin-top: 20px;
+  color: #188ae2 !important;
+  font-size: 40px;
+  font-family: "Rancho", sans-serif;
+}
+
+.logo span span {
+  color: #10c469;
+}
+
+.row-align {
+  align-items: center;
+}
+
+#wrapper {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.topbar {
+  left: 0px;
+  position: fixed;
+  right: 0;
+  top: 0px;
+  z-index: 1;
+  height: 70px;
+}
+
+.topbar .topbar-left {
+  background: #ffffff;
+  float: left;
+  text-align: center;
+  height: 70px;
+  position: relative;
+  width: 250px;
+  z-index: 1;
+  padding-top: 20px;
+}
+
+.topbar .navbar-default {
+  background-color: #253138;
+  border-radius: 0px;
+  border: none;
+  margin-bottom: 0px;
+  padding: 0px 20px;
+}
+
+.topbar .navbar-default .button-menu-mobile {
+  display: none;
+}
+
+.topbar .navbar-default .page-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  line-height: 70px;
+  color: #ffffff;
+}
+
+.topbar .navbar-default .navbar-nav {
+  flex-direction: row;
+  font-size: 25px;
+}
+
+.topbar .navbar-default .navbar-nav li {
+  padding-right: 20px;
+}
+
+.topbar .navbar-default .navbar-nav li a {
+  color: #ffffff;
+}
+
+.topbar .navbar-default .navbar-nav li a:hover {
+  color: #4fb68d;
+}
+
+.side-menu {
+  top: 70px;
+  width: 250px;
+  z-index: 10;
+  background: #ffffff;
+  bottom: 50px;
+  height: 100%;
+  margin-bottom: -70px;
+  margin-top: 0px;
+  padding-bottom: 70px;
+  position: fixed;
+}
+
+.side-menu .user-box {
+  text-align: center;
+  padding: 30px 0 20px 0;
+}
+
+.side-menu .user-box .user-img {
+  position: relative;
+  height: 88px;
+  width: 88px;
+  margin: 0 auto;
+}
+
+.side-menu .user-box .user-img .img-thumbnail {
+  border: 1px solid #ebeff2;
+}
+
+.side-menu .user-box .user-img .img-circle {
+  border-radius: 50%;
+}
+
+.side-menu .user-box .user-status {
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  bottom: 7px;
+  right: 15px;
+}
+
+.side-menu .user-box .user-status i {
+  color: #4fb68d;
+}
+
+.side-menu .user-box h5 {
+  padding: 10px 0;
+  font-weight: 600;
+  color: #98a6ad;
+}
+
+.side-menu .user-box ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.side-menu .user-box ul li a {
+  color: #98a6ad;
+}
+
+.side-menu .user-box ul li :hover {
+  color: #4fb68d;
+}
+
+.side-menu #sidebar-menu {
+  text-align: center;
+}
+
+.side-menu #sidebar-menu .menu-title {
+  padding: 12px 20px !important;
+  letter-spacing: 0.035em;
+  pointer-events: none;
+  cursor: default;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.side-menu #sidebar-menu .item {
+  overflow: hidden;
+  transition: max-height 0.6s;
+  max-height: 0;
+}
+
+.side-menu #sidebar-menu .menu-collapse:target .item {
+  max-height: 10em;
+  transition: max-height 0.6s;
+}
+
+.side-menu #sidebar-menu ul {
+  text-align: left;
+}
+
+.side-menu #sidebar-menu ul li a {
+  color: #435966;
+  display: block;
+  padding: 12px 20px;
+  margin: 4px 0px;
+  border-left: 3px solid transparent;
+  font-size: 16px;
+}
+
+.side-menu #sidebar-menu ul li a i {
+  padding-right: 15px;
+  font-size: 20px;
+}
+
+.side-menu #sidebar-menu ul li :hover {
+  color: #4fb68d;
+}
+
+.content-page {
+  margin-left: 250px;
+  overflow: hidden;
+}
+
+.content-page .content {
+  padding: 0px 5px;
+  margin-top: 50px;
+}
+
+.content-page .content .cantainer {
+  width: auto;
+}
+
+.content-page .card-box {
+  padding: 20px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  background-clip: padding-box;
+  margin-bottom: 20px;
+  background-color: #2f3e47;
+}
+
+.content-page .card-box .header-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  margin-bottom: 8px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.content-page .card-box label {
+  display: flex;
+  color: #ffffff;
+  font-size: 15px;
+  align-items: center;
+}
+
+.content-page .card-box label input {
+  width: 60%;
+  background-color: #435966;
+  margin-left: 10px;
+  color: #ffffff;
+}
+
+.content-page .card-box .btn-success {
+  float: right;
+  margin-right: 20px;
+}
+
+.content-page .card-box .table {
+  background-color: #2f3e47;
+  color: #ffffff;
+}
+
+.content-page .card-box .table thead th {
+  border: none;
+}
+
+.content-page .card-box .table thead .description {
+  width: 350px;
+}
+
+.content-page .card-box .table thead .name {
+  width: 250px;
+}
+
+.content-page .card-box .table thead .picture {
+  width: 80px;
+}
+
+.content-page .card-box .table tbody tr td {
+  padding: 4px;
+  border: none;
+}
+
+.content-page .card-box .table tbody tr td a {
+  font-size: 20px;
+  padding: 0 10px;
+  border: none;
+  background-color: #ffffff00;
+  float: left;
+}
+
+.content-page .card-box .table tbody tr td a i:hover {
+  color: #4fb68d;
+}
+
+.modal .modal-dialog {
+  margin-top: 30px;
+  max-width: 550px;
+}
+
+.modal .modal-header,
+.modal .modal-body,
+.modal .modal-footer {
+  padding: 10px 20px;
+}
+
+.modal .modal-content {
+  border-radius: 1px;
+}
+
+.modal .modal-content .description {
+  height: 120px;
+}
+
+.modal .modal-footer {
+  background: #ecf0f1;
+  border-radius: 0 0 1px 1px;
+}
+
+.modal .modal-title {
+  display: inline-block;
+}
+
+.modal .form-control {
+  border-radius: 1px;
+  box-shadow: none;
+  border-color: #dddddd;
+}
+
+.modal textarea.form-control {
+  resize: vertical;
+}
+
+.modal .btn {
+  border-radius: 1px;
+  min-width: 100px;
+}
+
+.modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.modal form label {
+  font-weight: normal;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+/*# sourceMappingURL=admin.css.map */
