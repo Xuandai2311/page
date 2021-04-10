@@ -85,6 +85,8 @@
                             <div class="item">
                                 <a href="index.php?ctrl=product/product">Quản Lý Sản Phẩm</a>
                                 <a href="">Quản Lý Tài Khoản</a>
+                                <a href="index.php?ctrl=warehouse/NhapKho">Nhập Kho</a>
+                                <a href="">Xuất Kho</a>
                             </div>
                         </li>
                         <li class="has_sub">
